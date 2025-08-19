@@ -1,0 +1,19 @@
+on:
+       schedule:
+            -cron"*/2****"
+
+jobs:
+     demo-commans:
+       runs-on:ubuntu-latest
+
+       steps:
+          - name: show current working directory
+          run:pwd
+          
+          - name: List files in the directory
+          run: ls-la
+          
+          -name: print todays date
+            run:date
+          
+          
